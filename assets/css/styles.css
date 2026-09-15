@@ -252,3 +252,423 @@ textarea{min-height:160px;resize:vertical}
 .nav {
   min-height: 82px;
 }
+/* ======================================================
+   VOP SOLUTIONS - HOMEPAGE HERO
+   ====================================================== */
+
+.hero {
+  min-height: calc(100vh - 82px);
+  padding: 70px 0 80px;
+  display: flex;
+  align-items: center;
+
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(53, 182, 232, 0.15),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #ffffff 0%,
+      #f7f9fc 55%,
+      #eef6ff 100%
+    );
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.04fr 0.96fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 760px;
+}
+
+.hero .eyebrow {
+  color: #146ef5;
+  font-size: 0.79rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  margin-bottom: 24px;
+}
+
+.hero h1 {
+  font-size: clamp(3.6rem, 5.5vw, 5.4rem);
+  line-height: 1.02;
+  letter-spacing: -0.055em;
+  margin: 0 0 30px;
+  max-width: 760px;
+  color: #0b1f33;
+}
+
+.hero-sub {
+  font-size: 1.3rem;
+  line-height: 1.45;
+  font-weight: 800;
+  color: #0b1f33;
+  max-width: 680px;
+  margin-bottom: 22px;
+}
+
+.hero-copy {
+  font-size: 1.08rem;
+  line-height: 1.75;
+  color: #5f6b76;
+  max-width: 690px;
+  margin-bottom: 0;
+}
+
+.hero .actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 34px 0 22px;
+}
+
+.hero .btn {
+  min-height: 52px;
+  padding: 0 24px;
+  font-size: 0.87rem;
+}
+
+.location-note {
+  color: #6c7781;
+  font-size: 0.91rem;
+  font-weight: 600;
+}
+
+
+/* ======================================================
+   TECHNOLOGY VISUAL
+   ====================================================== */
+
+.hero-tech-panel {
+  position: relative;
+  min-height: 540px;
+  border-radius: 30px;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 82% 16%,
+      rgba(53, 182, 232, 0.45),
+      transparent 36%
+    ),
+    linear-gradient(
+      145deg,
+      #081a2d 0%,
+      #0b2746 50%,
+      #146ef5 130%
+    );
+
+  box-shadow:
+    0 35px 80px rgba(11, 31, 51, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.tech-grid {
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.035) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.035) 1px,
+      transparent 1px
+    );
+
+  background-size: 42px 42px;
+}
+
+
+/* Rings */
+
+.tech-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  left: 50%;
+  top: 48%;
+  transform: translate(-50%, -50%);
+}
+
+.ring-one {
+  width: 230px;
+  height: 230px;
+}
+
+.ring-two {
+  width: 350px;
+  height: 350px;
+}
+
+.ring-three {
+  width: 470px;
+  height: 470px;
+}
+
+
+/* Center hub */
+
+.tech-center {
+  position: absolute;
+
+  left: 50%;
+  top: 48%;
+
+  transform: translate(-50%, -50%);
+
+  width: 155px;
+  height: 155px;
+
+  border-radius: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(20, 110, 245, 0.95),
+      rgba(53, 182, 232, 0.78)
+    );
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  box-shadow:
+    0 20px 45px rgba(0, 0, 0, 0.2),
+    0 0 70px rgba(20, 110, 245, 0.25);
+}
+
+.center-logo {
+  font-family: Manrope, Inter, sans-serif;
+  font-size: 2.15rem;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: -0.06em;
+}
+
+.tech-center span {
+  font-size: 0.68rem;
+  margin-top: 8px;
+  opacity: 0.85;
+}
+
+
+/* Floating capability cards */
+
+.tech-card {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  gap: 9px;
+
+  padding: 11px 15px;
+
+  color: #ffffff;
+
+  font-size: 0.84rem;
+  font-weight: 750;
+
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.09);
+
+  border: 1px solid rgba(255, 255, 255, 0.16);
+
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.tech-dot {
+  width: 8px;
+  height: 8px;
+
+  background: #35b6e8;
+
+  border-radius: 50%;
+
+  box-shadow: 0 0 0 5px rgba(53, 182, 232, 0.11);
+}
+
+.card-cloud {
+  top: 18%;
+  left: 10%;
+}
+
+.card-security {
+  top: 24%;
+  right: 8%;
+}
+
+.card-ai {
+  bottom: 25%;
+  left: 9%;
+}
+
+.card-automation {
+  bottom: 18%;
+  right: 8%;
+}
+
+
+/* Visual footer */
+
+.tech-panel-footer {
+  position: absolute;
+  left: 30px;
+  bottom: 27px;
+
+  color: rgba(255, 255, 255, 0.9);
+
+  font-weight: 700;
+  font-size: 0.83rem;
+}
+
+
+/* ======================================================
+   RESPONSIVE HERO
+   ====================================================== */
+
+@media (max-width: 1050px) {
+
+  .hero-grid {
+    grid-template-columns: 1fr 0.85fr;
+    gap: 45px;
+  }
+
+  .hero h1 {
+    font-size: clamp(3.2rem, 6vw, 4.5rem);
+  }
+
+  .hero-tech-panel {
+    min-height: 460px;
+  }
+
+}
+
+
+@media (max-width: 900px) {
+
+  .hero {
+    min-height: auto;
+    padding: 70px 0;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content {
+    max-width: 800px;
+  }
+
+  .hero h1 {
+    max-width: 760px;
+  }
+
+  .hero-tech-panel {
+    min-height: 500px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .hero {
+    padding: 55px 0;
+  }
+
+  .hero .eyebrow {
+    font-size: 0.69rem;
+    line-height: 1.7;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    line-height: 1.02;
+  }
+
+  .hero-sub {
+    font-size: 1.15rem;
+  }
+
+  .hero-copy {
+    font-size: 1rem;
+  }
+
+  .hero .actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero .btn {
+    width: 100%;
+  }
+
+  .hero-tech-panel {
+    min-height: 420px;
+    border-radius: 22px;
+  }
+
+  .ring-three {
+    width: 390px;
+    height: 390px;
+  }
+
+  .ring-two {
+    width: 290px;
+    height: 290px;
+  }
+
+  .ring-one {
+    width: 190px;
+    height: 190px;
+  }
+
+  .tech-center {
+    width: 130px;
+    height: 130px;
+  }
+
+  .tech-card {
+    font-size: 0.74rem;
+    padding: 9px 11px;
+  }
+
+  .card-cloud {
+    top: 13%;
+    left: 5%;
+  }
+
+  .card-security {
+    top: 22%;
+    right: 4%;
+  }
+
+  .card-ai {
+    bottom: 23%;
+    left: 5%;
+  }
+
+  .card-automation {
+    bottom: 15%;
+    right: 4%;
+  }
+
+}
