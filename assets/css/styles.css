@@ -734,3 +734,78 @@ textarea{min-height:160px;resize:vertical}
     height: 145px;
   }
 }
+/* ===== FINAL HERO TUNING ===== */
+
+@media (min-width: 1100px) {
+
+  .hero {
+    min-height: calc(100vh - 82px);
+    padding: 38px 0 42px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 58px;
+  }
+
+  .hero h1 {
+    font-size: clamp(3.55rem, 4.15vw, 4.35rem);
+    line-height: 1.01;
+    max-width: 720px;
+    margin-bottom: 22px;
+  }
+
+  .hero-sub {
+    font-size: 1.12rem;
+    line-height: 1.35;
+    margin-bottom: 16px;
+  }
+
+  .hero-copy {
+    font-size: 1rem;
+    line-height: 1.55;
+    max-width: 675px;
+  }
+
+  .hero .actions {
+    margin: 22px 0 14px;
+  }
+
+  .hero .btn {
+    min-height: 48px;
+    padding: 0 20px;
+  }
+
+  .location-note {
+    font-size: 0.88rem;
+  }
+
+  .hero-tech-panel {
+    min-height: 465px;
+    max-height: 485px;
+  }
+
+  .ring-one {
+    width: 195px;
+    height: 195px;
+  }
+
+  .ring-two {
+    width: 295px;
+    height: 295px;
+  }
+
+  .ring-three {
+    width: 400px;
+    height: 400px;
+  }
+
+  .tech-center {
+    width: 135px;
+    height: 135px;
+  }
+
+  .center-logo {
+    font-size: 2rem;
+  }
+}
