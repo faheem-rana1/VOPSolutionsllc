@@ -672,3 +672,65 @@ textarea{min-height:160px;resize:vertical}
   }
 
 }
+/* ======================================================
+   FINAL DESKTOP HERO BALANCE
+   ====================================================== */
+
+@media (min-width: 1100px) {
+
+  .hero {
+    min-height: calc(100vh - 82px);
+    padding: 52px 0 55px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1.08fr 0.92fr;
+    gap: 68px;
+  }
+
+  .hero h1 {
+    font-size: clamp(3.5rem, 4.65vw, 4.75rem);
+    line-height: 1.02;
+    max-width: 720px;
+    margin-bottom: 24px;
+  }
+
+  .hero-sub {
+    font-size: 1.18rem;
+    margin-bottom: 18px;
+  }
+
+  .hero-copy {
+    font-size: 1.02rem;
+    line-height: 1.65;
+  }
+
+  .hero .actions {
+    margin: 26px 0 17px;
+  }
+
+  .hero-tech-panel {
+    min-height: 490px;
+    max-height: 510px;
+  }
+
+  .ring-one {
+    width: 210px;
+    height: 210px;
+  }
+
+  .ring-two {
+    width: 320px;
+    height: 320px;
+  }
+
+  .ring-three {
+    width: 430px;
+    height: 430px;
+  }
+
+  .tech-center {
+    width: 145px;
+    height: 145px;
+  }
+}
