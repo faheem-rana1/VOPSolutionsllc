@@ -200,3 +200,55 @@ textarea{min-height:160px;resize:vertical}
   .tech-visual{min-height:330px}
   .cta{padding:34px 26px;align-items:flex-start;flex-direction:column}
 }
+/* ===== VOP HERO REFINEMENT ===== */
+
+.hero {
+  min-height: calc(100vh - 76px);
+  padding: 48px 0 64px;
+}
+
+.hero-grid {
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: 70px;
+}
+
+.hero h1 {
+  font-size: clamp(3rem, 5vw, 5rem);
+  line-height: 1.03;
+  max-width: 760px;
+  margin-bottom: 28px;
+}
+
+.hero-sub {
+  font-size: 1.25rem;
+  line-height: 1.45;
+  max-width: 720px;
+}
+
+.hero-copy {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: 680px;
+}
+
+.tech-visual {
+  min-height: 500px;
+  max-height: 560px;
+  border-radius: 28px;
+}
+
+.eyebrow {
+  margin-bottom: 24px;
+}
+
+.actions {
+  margin-top: 30px;
+}
+
+.brand {
+  font-size: 1.45rem;
+}
+
+.nav {
+  min-height: 82px;
+}
