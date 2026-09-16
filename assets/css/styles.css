@@ -809,3 +809,19 @@ textarea{min-height:160px;resize:vertical}
     font-size: 2rem;
   }
 }
+/* Refine desktop dropdown menu */
+
+@media (min-width: 901px) {
+
+  .dropdown-menu {
+    min-width: 255px;
+    padding: 8px;
+    border-radius: 14px;
+  }
+
+  .dropdown-menu a {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+    line-height: 1.35;
+  }
+}
