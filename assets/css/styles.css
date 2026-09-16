@@ -825,3 +825,231 @@ textarea{min-height:160px;resize:vertical}
     line-height: 1.35;
   }
 }
+/* ======================================================
+   CORE CAPABILITY BAND
+   ====================================================== */
+
+.capability-band {
+  background: #0b1f33;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.capability-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.capability-item {
+  position: relative;
+
+  min-height: 105px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 20px 26px;
+
+  color: #ffffff;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.12);
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.capability-item:first-child {
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.capability-item:hover {
+  background: rgba(20, 110, 245, 0.18);
+}
+
+.capability-number {
+  color: #35b6e8;
+
+  font-size: 0.68rem;
+  font-weight: 800;
+
+  letter-spacing: 0.14em;
+
+  margin-bottom: 5px;
+}
+
+.capability-name {
+  font-family: Manrope, Inter, sans-serif;
+
+  font-size: 0.97rem;
+  font-weight: 750;
+
+  line-height: 1.3;
+}
+
+
+/* ======================================================
+   BUSINESS OUTCOMES SECTION
+   ====================================================== */
+
+.business-outcomes {
+  padding: 105px 0;
+  background: #ffffff;
+}
+
+.outcomes-heading {
+  max-width: 850px;
+  margin-bottom: 50px;
+}
+
+.outcomes-heading h2 {
+  font-size: clamp(2.4rem, 4vw, 3.8rem);
+
+  max-width: 780px;
+
+  margin-bottom: 22px;
+}
+
+.outcomes-heading p {
+  max-width: 780px;
+
+  color: #5f6b76;
+
+  font-size: 1.07rem;
+
+  line-height: 1.75;
+}
+
+.outcome-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 22px;
+}
+
+.outcome-card {
+  position: relative;
+
+  padding: 32px;
+
+  min-height: 270px;
+
+  background: #f7f9fc;
+
+  border: 1px solid #dde5ee;
+
+  border-radius: 18px;
+
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease;
+}
+
+.outcome-card:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(20, 110, 245, 0.35);
+
+  box-shadow: 0 18px 45px rgba(11, 31, 51, 0.1);
+}
+
+.outcome-top {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 48px;
+}
+
+.outcome-number {
+  color: #146ef5;
+
+  font-size: 0.72rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.14em;
+}
+
+.outcome-icon {
+  width: 42px;
+  height: 42px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 12px;
+
+  background: #e9f2ff;
+
+  color: #146ef5;
+
+  font-size: 1.1rem;
+
+  font-weight: 900;
+}
+
+.outcome-card h3 {
+  font-size: 1.4rem;
+
+  margin-bottom: 13px;
+}
+
+.outcome-card p {
+  color: #5f6b76;
+
+  line-height: 1.7;
+
+  margin: 0;
+}
+
+
+/* ======================================================
+   RESPONSIVE
+   ====================================================== */
+
+@media (max-width: 900px) {
+
+  .capability-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .capability-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .outcome-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .outcome-card {
+    min-height: auto;
+  }
+
+  .outcome-top {
+    margin-bottom: 32px;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .capability-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .capability-item {
+    min-height: 82px;
+  }
+
+  .business-outcomes {
+    padding: 75px 0;
+  }
+
+}
