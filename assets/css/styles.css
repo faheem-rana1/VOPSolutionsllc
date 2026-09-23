@@ -1962,9 +1962,7 @@ textarea{min-height:160px;resize:vertical}
 }
 
 .why-vop-header h2 {
-  max-width: 720px;
-  margin-bottom: 0;
-  font-size: clamp(2.7rem, 4.3vw, 4rem);
+  max-width: 660px;
 }
 
 .why-vop-intro {
@@ -2172,9 +2170,9 @@ textarea{min-height:160px;resize:vertical}
 @media (max-width: 950px) {
 
   .why-vop-header {
-    grid-template-columns: 1fr;
-    gap: 25px;
-  }
+  gap: 60px;
+  margin-bottom: 42px;
+}
 
   .why-vop-intro {
     max-width: 700px;
@@ -2203,8 +2201,8 @@ textarea{min-height:160px;resize:vertical}
 @media (max-width: 600px) {
 
   .why-vop-section {
-    padding: 75px 0;
-  }
+  padding: 90px 0 95px;
+}
 
   .why-vop-principles {
     grid-template-columns: 1fr;
@@ -2214,6 +2212,357 @@ textarea{min-height:160px;resize:vertical}
   .why-principle:not(:first-child) {
     padding: 28px 0;
     border-right: 0;
+  }
+
+}
+/* ======================================================
+   HOW WE WORK - DELIVERY PROCESS
+   ====================================================== */
+
+.delivery-process-section {
+  padding: 105px 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      #f7f9fc 0%,
+      #ffffff 100%
+    );
+}
+
+
+/* HEADER */
+
+.delivery-process-header {
+  display: grid;
+
+  grid-template-columns: 1.05fr 0.95fr;
+
+  gap: 80px;
+
+  align-items: end;
+
+  margin-bottom: 65px;
+}
+
+
+.delivery-process-header h2 {
+  max-width: 700px;
+
+  margin-bottom: 0;
+
+  font-size: clamp(2.7rem, 4.3vw, 4rem);
+}
+
+
+.delivery-process-intro {
+  max-width: 570px;
+}
+
+
+.delivery-process-intro p {
+  color: #5f6b76;
+
+  font-size: 1.03rem;
+
+  line-height: 1.75;
+
+  margin-bottom: 20px;
+}
+
+
+.delivery-process-values {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 16px;
+}
+
+
+.delivery-process-values span {
+  color: #146ef5;
+
+  font-size: 0.68rem;
+
+  font-weight: 850;
+
+  letter-spacing: 0.10em;
+}
+
+
+/* ======================================================
+   ROADMAP
+   ====================================================== */
+
+.delivery-roadmap {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: 18px;
+
+  padding-top: 6px;
+}
+
+
+/* HORIZONTAL CONNECTION */
+
+.delivery-line {
+  position: absolute;
+
+  top: 29px;
+
+  left: 9%;
+
+  right: 9%;
+
+  height: 2px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #146ef5,
+      #35b6e8
+    );
+
+  opacity: 0.25;
+}
+
+
+/* STEP */
+
+.delivery-step {
+  position: relative;
+
+  z-index: 1;
+}
+
+
+.delivery-marker {
+  width: 48px;
+
+  height: 48px;
+
+  display: grid;
+
+  place-items: center;
+
+  margin-bottom: 25px;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  border: 2px solid #146ef5;
+
+  box-shadow:
+    0 0 0 7px #f7f9fc;
+}
+
+
+.delivery-marker span {
+  color: #146ef5;
+
+  font-size: 0.70rem;
+
+  font-weight: 900;
+}
+
+
+/* STEP CONTENT */
+
+.delivery-step-content {
+  min-height: 310px;
+
+  padding: 25px 23px;
+
+  background: #ffffff;
+
+  border: 1px solid #dde5ee;
+
+  border-radius: 17px;
+
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    border-color 0.22s ease;
+}
+
+
+.delivery-step-content:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(20, 110, 245, 0.30);
+
+  box-shadow:
+    0 18px 42px rgba(11, 31, 51, 0.09);
+}
+
+
+.delivery-stage {
+  display: block;
+
+  color: #146ef5;
+
+  font-size: 0.67rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.13em;
+
+  margin-bottom: 18px;
+}
+
+
+.delivery-step-content h3 {
+  min-height: 54px;
+
+  margin-bottom: 14px;
+
+  font-size: 1.17rem;
+
+  line-height: 1.3;
+}
+
+
+.delivery-step-content p {
+  color: #5f6b76;
+
+  font-size: 0.86rem;
+
+  line-height: 1.65;
+
+  margin-bottom: 25px;
+}
+
+
+/* OUTCOME */
+
+.delivery-outcome {
+  margin-top: auto;
+
+  padding-top: 18px;
+
+  border-top: 1px solid #e5ebf2;
+
+  color: #7b8996;
+
+  font-size: 0.62rem;
+
+  font-weight: 850;
+
+  letter-spacing: 0.09em;
+}
+
+
+/* ======================================================
+   PROCESS FOOTER
+   ====================================================== */
+
+.delivery-process-footer {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 35px;
+
+  margin-top: 40px;
+
+  padding: 28px 30px;
+
+  background: #0b1f33;
+
+  border-radius: 17px;
+}
+
+
+.delivery-process-footer strong {
+  display: block;
+
+  color: #ffffff;
+
+  font-family: Manrope, Inter, sans-serif;
+
+  font-size: 1.05rem;
+
+  margin-bottom: 5px;
+}
+
+
+.delivery-process-footer span {
+  color: #aebfd0;
+
+  font-size: 0.87rem;
+}
+
+
+/* ======================================================
+   RESPONSIVE
+   ====================================================== */
+
+@media (max-width: 1050px) {
+
+  .delivery-roadmap {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+  }
+
+  .delivery-line {
+    display: none;
+  }
+
+  .delivery-marker {
+    margin-bottom: 15px;
+  }
+
+}
+
+
+@media (max-width: 900px) {
+
+  .delivery-process-header {
+    grid-template-columns: 1fr;
+
+    gap: 25px;
+
+    margin-bottom: 50px;
+  }
+
+  .delivery-process-intro {
+    max-width: 720px;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .delivery-process-section {
+    padding: 75px 0;
+  }
+
+  .delivery-roadmap {
+    grid-template-columns: 1fr;
+  }
+
+  .delivery-step-content {
+    min-height: auto;
+  }
+
+  .delivery-step-content h3 {
+    min-height: auto;
+  }
+
+  .delivery-process-footer {
+    flex-direction: column;
+
+    align-items: flex-start;
   }
 
 }
