@@ -1460,3 +1460,485 @@ textarea{min-height:160px;resize:vertical}
   }
 
 }
+/* ======================================================
+   AI & AUTOMATION SECTION
+   ====================================================== */
+
+.ai-automation-section {
+  position: relative;
+
+  padding: 105px 0;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(53, 182, 232, 0.16),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 10% 90%,
+      rgba(20, 110, 245, 0.12),
+      transparent 32%
+    ),
+    #081a2d;
+}
+
+
+.ai-automation-grid {
+  display: grid;
+
+  grid-template-columns: 0.92fr 1.08fr;
+
+  gap: 80px;
+
+  align-items: center;
+}
+
+
+/* LEFT SIDE */
+
+.ai-automation-copy {
+  max-width: 590px;
+}
+
+
+.ai-automation-copy .eyebrow {
+  color: #35b6e8;
+}
+
+
+.ai-automation-copy h2 {
+  color: #ffffff;
+
+  font-size: clamp(2.8rem, 4.4vw, 4rem);
+
+  line-height: 1.04;
+
+  max-width: 600px;
+
+  margin-bottom: 25px;
+}
+
+
+.ai-intro {
+  max-width: 580px;
+
+  color: #c8d5e2;
+
+  font-size: 1.05rem;
+
+  line-height: 1.75;
+}
+
+
+/* TECHNOLOGY PILLS */
+
+.ai-capabilities {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 9px;
+
+  margin-top: 27px;
+}
+
+
+.ai-capabilities span {
+  padding: 9px 12px;
+
+  border-radius: 999px;
+
+  color: #dce8f4;
+
+  background: rgba(255,255,255,0.06);
+
+  border: 1px solid rgba(255,255,255,0.12);
+
+  font-size: 0.81rem;
+
+  font-weight: 700;
+}
+
+
+/* BUSINESS OUTCOMES */
+
+.ai-outcomes {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 10px;
+
+  margin-top: 34px;
+}
+
+
+.ai-outcomes div {
+  padding: 16px;
+
+  border-radius: 13px;
+
+  background: rgba(255,255,255,0.045);
+
+  border: 1px solid rgba(255,255,255,0.09);
+}
+
+
+.ai-outcomes strong {
+  display: block;
+
+  color: #ffffff;
+
+  font-size: 0.84rem;
+
+  margin-bottom: 6px;
+}
+
+
+.ai-outcomes span {
+  display: block;
+
+  color: #9fb3c7;
+
+  font-size: 0.75rem;
+
+  line-height: 1.5;
+}
+
+
+.ai-automation-copy .actions {
+  margin-top: 30px;
+}
+
+
+/* ======================================================
+   BUSINESS-FIRST AI FRAMEWORK
+   ====================================================== */
+
+.ai-framework {
+  position: relative;
+
+  padding: 34px;
+
+  border-radius: 24px;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 95% 5%,
+      rgba(53, 182, 232, 0.22),
+      transparent 30%
+    ),
+    linear-gradient(
+      145deg,
+      #102e4f,
+      #0c2642
+    );
+
+  border: 1px solid rgba(255,255,255,0.12);
+
+  box-shadow: 0 30px 70px rgba(0,0,0,0.22);
+}
+
+
+.ai-framework::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,0.025) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,0.025) 1px,
+      transparent 1px
+    );
+
+  background-size: 42px 42px;
+
+  pointer-events: none;
+}
+
+
+/* FRAMEWORK HEADER */
+
+.ai-framework-header {
+  position: relative;
+
+  z-index: 1;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 30px;
+
+  align-items: flex-start;
+
+  margin-bottom: 30px;
+}
+
+
+.ai-framework-label {
+  display: block;
+
+  color: #35b6e8;
+
+  font-size: 0.68rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.14em;
+
+  margin-bottom: 8px;
+}
+
+
+.ai-framework-header h3 {
+  margin: 0;
+
+  max-width: 380px;
+
+  color: #ffffff;
+
+  font-size: 1.45rem;
+
+  line-height: 1.3;
+}
+
+
+.ai-framework-status {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  white-space: nowrap;
+
+  color: #b8cadb;
+
+  font-size: 0.65rem;
+
+  font-weight: 850;
+
+  letter-spacing: 0.10em;
+}
+
+
+.ai-framework-status span {
+  width: 8px;
+
+  height: 8px;
+
+  border-radius: 50%;
+
+  background: #35b6e8;
+
+  box-shadow:
+    0 0 0 5px rgba(53,182,232,0.10);
+}
+
+
+/* AI FLOW */
+
+.ai-flow {
+  position: relative;
+
+  z-index: 1;
+}
+
+
+.ai-flow-step {
+  display: grid;
+
+  grid-template-columns: 44px 1fr;
+
+  gap: 15px;
+
+  align-items: start;
+
+  padding: 16px 18px;
+
+  border-radius: 14px;
+
+  background: rgba(255,255,255,0.055);
+
+  border: 1px solid rgba(255,255,255,0.10);
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+
+.ai-flow-step:hover {
+  transform: translateX(4px);
+
+  background: rgba(255,255,255,0.085);
+
+  border-color: rgba(53,182,232,0.35);
+}
+
+
+.ai-flow-number {
+  width: 38px;
+
+  height: 38px;
+
+  display: grid;
+
+  place-items: center;
+
+  border-radius: 10px;
+
+  background: rgba(53,182,232,0.10);
+
+  color: #35b6e8;
+
+  font-size: 0.70rem;
+
+  font-weight: 900;
+}
+
+
+.ai-flow-step h4 {
+  margin: 1px 0 5px;
+
+  color: #ffffff;
+
+  font-size: 1rem;
+}
+
+
+.ai-flow-step p {
+  margin: 0;
+
+  color: #aec0d2;
+
+  font-size: 0.82rem;
+
+  line-height: 1.55;
+}
+
+
+.ai-flow-highlight {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(20,110,245,0.18),
+      rgba(53,182,232,0.10)
+    );
+
+  border-color: rgba(53,182,232,0.30);
+}
+
+
+/* CONNECTING LINE */
+
+.ai-flow-connector {
+  width: 1px;
+
+  height: 12px;
+
+  margin-left: 37px;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(53,182,232,0.50),
+      rgba(53,182,232,0.12)
+    );
+}
+
+
+/* FRAMEWORK FOOTER */
+
+.ai-framework-footer {
+  position: relative;
+
+  z-index: 1;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 24px;
+
+  padding-top: 20px;
+
+  border-top: 1px solid rgba(255,255,255,0.10);
+}
+
+
+.ai-framework-footer span {
+  color: #9fb7ca;
+
+  font-size: 0.62rem;
+
+  font-weight: 850;
+
+  letter-spacing: 0.10em;
+}
+
+
+/* ======================================================
+   RESPONSIVE
+   ====================================================== */
+
+@media (max-width: 1000px) {
+
+  .ai-automation-grid {
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+  .ai-automation-copy {
+    max-width: 760px;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .ai-automation-section {
+    padding: 75px 0;
+  }
+
+  .ai-automation-copy h2 {
+    font-size: 2.7rem;
+  }
+
+  .ai-outcomes {
+    grid-template-columns: 1fr;
+  }
+
+  .ai-framework {
+    padding: 24px;
+  }
+
+  .ai-framework-header {
+    flex-direction: column;
+
+    gap: 16px;
+  }
+
+  .ai-framework-status {
+    white-space: normal;
+  }
+
+}
