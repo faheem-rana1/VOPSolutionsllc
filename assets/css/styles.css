@@ -1900,32 +1900,31 @@ textarea{min-height:160px;resize:vertical}
 
 @media (max-width: 1000px) {
 
-  .ai-automation-grid {
-    grid-template-columns: 1fr;
+ .ai-automation-grid {
+  grid-template-columns: 0.94fr 1.06fr;
+  gap: 65px;
+}
 
-    gap: 50px;
-  }
-
-  .ai-automation-copy {
-    max-width: 760px;
-  }
+.ai-automation-copy .actions {
+  margin-top: 24px;
+}
 
 }
 
 
 @media (max-width: 650px) {
 
-  .ai-automation-section {
-    padding: 75px 0;
-  }
+.ai-automation-section {
+  padding: 90px 0;
+}
 
   .ai-automation-copy h2 {
     font-size: 2.7rem;
   }
 
-  .ai-outcomes {
-    grid-template-columns: 1fr;
-  }
+ .ai-outcomes {
+  margin-top: 28px;
+}
 
   .ai-framework {
     padding: 24px;
@@ -1939,6 +1938,282 @@ textarea{min-height:160px;resize:vertical}
 
   .ai-framework-status {
     white-space: normal;
+  }
+
+}
+/* ======================================================
+   WHY VOP SOLUTIONS
+   ====================================================== */
+
+.why-vop-section {
+  padding: 105px 0;
+  background: #ffffff;
+}
+
+
+/* HEADER */
+
+.why-vop-header {
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: 80px;
+  align-items: end;
+  margin-bottom: 48px;
+}
+
+.why-vop-header h2 {
+  max-width: 720px;
+  margin-bottom: 0;
+  font-size: clamp(2.7rem, 4.3vw, 4rem);
+}
+
+.why-vop-intro {
+  max-width: 540px;
+}
+
+.why-vop-intro p {
+  color: #5f6b76;
+  font-size: 1.03rem;
+  line-height: 1.75;
+  margin-bottom: 20px;
+}
+
+.why-vop-link {
+  color: #146ef5;
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 0.06em;
+}
+
+
+/* STRATEGY FLOW */
+
+.strategy-path {
+  display: grid;
+
+  grid-template-columns:
+    1fr auto
+    1fr auto
+    1fr;
+
+  align-items: center;
+
+  gap: 18px;
+
+  padding: 28px 30px;
+
+  background: #f7f9fc;
+
+  border: 1px solid #dde5ee;
+
+  border-radius: 20px;
+}
+
+
+.strategy-step {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+
+.strategy-label {
+  min-width: 38px;
+  height: 38px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 10px;
+
+  background: #eaf2ff;
+
+  color: #146ef5;
+
+  font-size: 0.7rem;
+  font-weight: 900;
+}
+
+
+.strategy-step strong {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: #0b1f33;
+
+  font-family: Manrope, Inter, sans-serif;
+
+  font-size: 1rem;
+}
+
+
+.strategy-step div > span {
+  display: block;
+
+  color: #5f6b76;
+
+  font-size: 0.8rem;
+
+  line-height: 1.5;
+}
+
+
+.strategy-arrow {
+  color: #146ef5;
+
+  font-size: 1.45rem;
+
+  font-weight: 800;
+
+  opacity: 0.75;
+}
+
+
+/* PRINCIPLES */
+
+.why-vop-principles {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  margin-top: 42px;
+
+  border-top: 1px solid #dde5ee;
+}
+
+
+.why-principle {
+  position: relative;
+
+  padding: 31px 28px 10px 0;
+
+  min-height: 210px;
+
+  border-right: 1px solid #dde5ee;
+}
+
+
+.why-principle:not(:first-child) {
+  padding-left: 28px;
+}
+
+
+.why-principle:last-child {
+  border-right: 0;
+}
+
+
+.why-number {
+  display: block;
+
+  margin-bottom: 30px;
+
+  color: #146ef5;
+
+  font-size: 0.7rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.13em;
+}
+
+
+.why-principle h3 {
+  font-size: 1.25rem;
+
+  margin-bottom: 12px;
+}
+
+
+.why-principle p {
+  margin: 0;
+
+  color: #5f6b76;
+
+  font-size: 0.91rem;
+
+  line-height: 1.65;
+}
+
+
+/* HOVER DETAIL */
+
+.why-principle::before {
+  content: "";
+
+  position: absolute;
+
+  top: -1px;
+
+  left: 0;
+
+  width: 0;
+
+  height: 3px;
+
+  background: linear-gradient(
+    90deg,
+    #146ef5,
+    #35b6e8
+  );
+
+  transition: width 0.25s ease;
+}
+
+
+.why-principle:hover::before {
+  width: 100%;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+
+  .why-vop-header {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .why-vop-intro {
+    max-width: 700px;
+  }
+
+  .strategy-path {
+    grid-template-columns: 1fr;
+  }
+
+  .strategy-arrow {
+    transform: rotate(90deg);
+    margin-left: 15px;
+  }
+
+  .why-vop-principles {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-principle {
+    border-bottom: 1px solid #dde5ee;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .why-vop-section {
+    padding: 75px 0;
+  }
+
+  .why-vop-principles {
+    grid-template-columns: 1fr;
+  }
+
+  .why-principle,
+  .why-principle:not(:first-child) {
+    padding: 28px 0;
+    border-right: 0;
   }
 
 }
