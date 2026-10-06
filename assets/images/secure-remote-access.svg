@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+<title id="title">Secure remote access concepts</title><desc id="desc">A work device connects through identity and access checks to business applications.</desc>
+<rect width="960" height="600" fill="#edf4fc"/>
+<g font-family="Arial, sans-serif"><text x="64" y="80" fill="#1059c9" font-size="25" letter-spacing="3">SECURE REMOTE WORK</text><text x="64" y="146" fill="#0b1f33" font-size="43" font-weight="700">People. Devices. Access.</text>
+<path d="M279 318h107m188 0h107" fill="none" stroke="#7c9ebb" stroke-width="4" stroke-dasharray="10 9"/>
+<rect x="80" y="248" width="200" height="132" rx="12" fill="#fff" stroke="#0b1f33" stroke-width="5"/><path d="M65 397h230l-18 17H83z" fill="#0b1f33"/><rect x="99" y="267" width="162" height="94" fill="#dceaf7"/>
+<circle cx="480" cy="322" r="91" fill="#0b1f33"/><rect x="450" y="312" width="60" height="48" rx="8" fill="#8ecbff"/><path d="M459 312v-17a21 21 0 0 1 42 0v17" stroke="#8ecbff" stroke-width="7" fill="none"/>
+<rect x="683" y="232" width="207" height="178" rx="18" fill="#fff" stroke="#0b1f33" stroke-width="4"/><path d="M683 275h207" stroke="#0b1f33" stroke-width="4"/><circle cx="705" cy="254" r="5" fill="#1059c9"/>
+<g fill="#b9d8f5"><rect x="711" y="301" width="61" height="35" rx="5"/><rect x="798" y="301" width="61" height="35" rx="5"/><rect x="711" y="353" width="61" height="30" rx="5"/><rect x="798" y="353" width="61" height="30" rx="5"/></g>
+<g fill="#0b1f33" font-size="30" text-anchor="middle" font-weight="700"><text x="180" y="478">Work device</text><text x="480" y="478">Access checks</text><text x="785" y="478">Business apps</text></g>
+</g></svg>

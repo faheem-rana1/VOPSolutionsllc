@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+<title id="title">Connected business collaboration</title><desc id="desc">Calls, meetings and shared files connect around the team.</desc>
+<rect width="960" height="600" fill="#edf4fc"/>
+<g font-family="Arial, sans-serif"><text x="64" y="80" fill="#1059c9" font-size="25" letter-spacing="3">COMMUNICATION + COLLABORATION</text><text x="64" y="146" fill="#0b1f33" font-size="43" font-weight="700">Keep the team connected.</text>
+<path d="M480 292v48H188v46m292-46v46m0-46h292v46" fill="none" stroke="#7c9ebb" stroke-width="4"/>
+<rect x="325" y="210" width="310" height="85" rx="42" fill="#0b1f33"/><text x="480" y="264" fill="#fff" font-size="35" text-anchor="middle" font-weight="700">Your team</text>
+<g fill="#fff" stroke="#c5d3e1" stroke-width="2"><rect x="62" y="382" width="252" height="154" rx="14"/><rect x="354" y="382" width="252" height="154" rx="14"/><rect x="646" y="382" width="252" height="154" rx="14"/></g>
+<g stroke="#1059c9" stroke-width="4" fill="none"><path d="m168 407-10 8c-3 21 19 44 40 43l9-12-15-11-8 7-12-14 7-8z"/><rect x="455" y="414" width="40" height="30" rx="4"/><path d="m495 421 18-7v30l-18-7"/><path d="M744 443v-28h20l8 8h33v33h-61z"/></g>
+<g fill="#0b1f33" font-size="34" font-weight="700" text-anchor="middle"><text x="188" y="507">Calls</text><text x="480" y="507">Meetings</text><text x="772" y="507">Files</text></g>
+</g></svg>
